@@ -1,0 +1,39 @@
+
+{
+  "": {
+    "": {
+      "title": "about me",
+      "text": "Miles (b. 1997) is a maker based out of Asheville, NC. \n\n He works predominantly with natural fiber, wood, metal, and reclaimed materials to create utilitarian objects. \n\n contact→ studio@mileskm.me",
+      "images": ["images/IMG_1444.jpeg"]
+    }
+  },
+  "~~~~~": {
+    "wool": {
+      "title": "wool",
+      "text": "Wool study: processing a raw boarder leicester fleece into yarn and felt.\n\n 6 lbs of raw wool. \nSingle spun worsted and 2-ply fingering weight yarns.\n (2025)",
+      "images": ["images/IMG_0632.JPG", "images/IMG_0702.JPG", "images/IMG_0717.JPG", "images/IMG_0950.jpg"]
+    },
+    "hubba": {
+      "title": "hubba hubba bags",
+      "text": "Collection of 8 nylon shoulder bags created from a retired hubba hubba nx tent.\n\n21\" x 25\"\n(2025)",
+      "images": ["images/IMG_0843.jpeg", "images/IMG_0849.jpeg","images/000059620016 2.jpg","images/IMG_0839.jpeg", "images/IMG_0851.jpeg", "images/IMG_0853.jpeg","images/IMG_0840.jpeg", "images/IMG_0846.jpeg", "images/IMG_0844.jpeg", "images/IMG_0847.jpeg",  "images/IMG_0854.jpeg"]
+    },
+    "scrap sling": {
+      "title": "scrap sling",
+      "text": "Crossbody bag made from sewing scraps.\n\n14\" x 7\" x 5\"\n(2024)",
+      "images": ["images/DSC03171.jpg", "images/DSC03175.jpg"]
+    },
+    "handlebar bag": {
+      "title": "handlebar bag",
+      "text": "Waterproof handlebar bag made from reversed RX30 XPAC and 420D robic. Structure from tent pole and cutting board\n\n20\" x 9\" x 8\"\n(2024)",
+      "images": ["images/DSC03097.jpg", "images/DSC03100.jpg", "images/DSC03123.jpg"]
+    },
+    "overnight bag": {
+      "title": "backpack",
+      "text": "ultralight backpacking pack made from dyneema, ripstop, and reclaimed foam.\n\n24\" x 14\" x 10\"\n(2023)",
+      "images": ["images/IMG_001.jpeg", "images/IMG_002.jpeg", "images/IMG_003.jpeg", "images/IMG_004.jpg", "images/IMG_005.jpeg"]
+    }
+  }
+
+}
+

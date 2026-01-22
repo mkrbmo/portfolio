@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: Georgia, "Times New Roman", serif;
+  color: black;
+  height: 100vh;
+  display: flex;
+}
+
+/* Sidebar */
+nav {
+  width: 260px;
+  padding: 40px 30px;
+  border-right: 1px solid #eee;
+}
+
+nav ul {
+  list-style: none;
+}
+#sidebar {
+  margin-top: 30px;
+}
+
+
+.subitems li {
+  margin-bottom: 10px;
+  font-style: italic
+  
+}
+
+nav a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#asciiDisplay {
+  font-family: monospace;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.post {
+  width: 100%;
+  max-height: 100vh;       
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  flex: 0 1 70%;                 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  justify-content: safe center;
+}
+.image-container {
+    height: 100%; 
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    min-width: 0;
+}
+
+.image-container img {
+    height: 100%;
+    padding-right: 0.4rem;
+    object-fit: contain;
+    width: auto; 
+}
+.image-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+  background-color: white;
+  padding: 0 2px;
+  
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  opacity: 0.6;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.carousel-nav span {
+  margin: 0 5px;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: white;
+  padding: 0 2px;
+  font-style: italic;
+}
+
+.carousel-nav span.active {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Text */
+.post-text {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  overflow-y: auto;
+  padding: 10px;
+  text-align: right;
+}
+
+.post-text p {
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+/* Mobile styles: hide sidebar, show top banner nav with hamburger */
+@media (max-width: 768px) {
+  body {
+    display: block;
+    height: auto;
+  }
+
+  /* Make nav a top banner */
+  nav {
+    width: 100%;
+    padding: 10px 16px;
+    border-right: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  /* Ensure title (h1) and hamburger align vertically */
+  nav h1 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    padding: 6px;
+  }
+
+  /* Hide the top-level sidebar (`#sidebar`) by default; expose as dropdown when nav has .open.
+     Use a child selector so nested `.subitems` ULs remain normal flow (they won't stack on top of each other). */
+  nav > #sidebar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 12px 18px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    margin-top: 0; /* ensure dropdown sits flush under nav */
+  }
+
+  nav.open > #sidebar {
+    display: block;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 6px 0;
+    font-size: 0.95rem;
+  }
+
+  /* Make main content sit below the fixed nav */
+  main {
+    margin-top: 56px; /* match nav approximate height */
+  }
+  .post-text {
+    font-size: 0.8rem;
+  }
+
+  /* Small adjustments for carousel on small screens */
+  .carousel {
+    flex-basis: auto;
+    height: calc(60vh - 56px);
+  }
+
+  .image-container img {
+    height: auto;
+  }
+  #asciiDisplay {
+    font-size: 0.6rem;
+  }
+}

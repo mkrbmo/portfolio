@@ -105,31 +105,6 @@ main {
     display: none;
   }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-style: italic;
-  text-decoration: underline;
-  cursor: pointer;
-  user-select: none;
-  background-color: white;
-  padding: 0 2px;
-  
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-.arrow:hover {
-  opacity: 0.6;
-}
-
 .carousel-nav {
   position: absolute;
   bottom: 10px;

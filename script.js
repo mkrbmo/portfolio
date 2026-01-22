@@ -122,8 +122,6 @@ function loadPost(section, post) {
     main.innerHTML = `
       <div class="post">
         <div class="carousel">
-          <span class="arrow left">←</span>
-          <span class="arrow right">→</span>
           <div class="image-container">
             ${postData.images.map((src, i) =>
               `<img src="${src}" class="${i === 0 ? "active" : ""}">`
@@ -160,11 +158,6 @@ function loadPost(section, post) {
       const hasOverflow = container.scrollWidth > container.clientWidth + 1; // small tolerance
       carouselNav.style.display = hasOverflow ? '' : 'none';
 
-      // Also hide arrow controls when there's no overflow
-      const leftArrow = document.querySelector('.arrow.left');
-      const rightArrow = document.querySelector('.arrow.right');
-      if (leftArrow) leftArrow.style.display = hasOverflow ? '' : 'none';
-      if (rightArrow) rightArrow.style.display = hasOverflow ? '' : 'none';
     }
 
     // Call immediately (some images may still be loading)
@@ -177,14 +170,6 @@ function loadPost(section, post) {
     // A small delayed check to account for layout timing
     setTimeout(updateCarouselNavVisibility, 50);
 
-    document.querySelector(".arrow.left")
-      .addEventListener("click", () =>
-        showSlide((currentSlide - 1 + images.length) % images.length)
-      );
-    document.querySelector(".arrow.right")
-      .addEventListener("click", () =>
-        showSlide((currentSlide + 1) % images.length)
-      );
 
   } else {
     // No images: render only text block
@@ -210,11 +195,6 @@ function loadPost(section, post) {
     const hasOverflow = container.scrollWidth > container.clientWidth + 1; // small tolerance
     carouselNav.style.display = hasOverflow ? '' : 'none';
 
-    // Also hide arrow controls when there's no overflow
-    const leftArrow = document.querySelector('.arrow.left');
-    const rightArrow = document.querySelector('.arrow.right');
-    if (leftArrow) leftArrow.style.display = hasOverflow ? '' : 'none';
-    if (rightArrow) rightArrow.style.display = hasOverflow ? '' : 'none';
   }
 
   // Call immediately (some images may still be loading)
@@ -227,14 +207,6 @@ function loadPost(section, post) {
   // A small delayed check to account for layout timing
   setTimeout(updateCarouselNavVisibility, 50);
 
-  document.querySelector(".arrow.left")
-    .addEventListener("click", () =>
-      showSlide((currentSlide - 1 + images.length) % images.length)
-    );
-  document.querySelector(".arrow.right")
-    .addEventListener("click", () =>
-      showSlide((currentSlide + 1) % images.length)
-    );
 }
 
 function showSlide(index) {

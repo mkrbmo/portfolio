@@ -3,7 +3,7 @@
   "": {
     "": {
       "title": "about me",
-      "text": "Miles (b. 1997) is a maker born and based out of Asheville, NC. \n\n He works predominantly with natural fiber, wood, metal, and reclaimed materials to create utilitarian objects. \n\n contact→ studio@mileskm.me",
+      "text": "Miles (b. 1997) is a maker born and based out of Asheville, NC. \n\n He works predominantly with natural fiber, wood, metal, and reclaimed materials to create utilitarian objects and gear. \n\n contact→ studio@mileskm.me",
       "images": ["images/IMG_1444.jpeg"]
     }
   },
@@ -13,11 +13,6 @@
       "text": "Low shelf in white oak with walnut pins\n\n 25\" x 10\" x 20\"\n(2026)",
       "images": ["images/IMG_1419.JPG", "images/IMG_1424.JPG","images/IMG_1421.JPG", "images/IMG_1396.JPG",    "images/IMG_1428.JPG"]
     },
-    "wool": {
-      "title": "wool",
-      "text": "Wool study: processing a raw boarder leicester fleece into yarn and felt.\n\n 6 lbs of raw wool. \nSingle spun worsted and 2-ply fingering weight yarns.\n (2025)",
-      "images": ["images/IMG_0632.jpeg", "images/IMG_0702.jpeg", "images/IMG_0717.jpeg", "images/IMG_0950.jpeg"]
-    },
     "hubba": {
       "title": "hubba hubba bags",
       "text": "Collection of 8 nylon shoulder bags created from a retired hubba hubba nx tent.\n\n21\" x 25\"\n(2025)",
@@ -26,7 +21,7 @@
     "scrap sling": {
       "title": "scrap sling",
       "text": "Crossbody bag made from sewing scraps.\n\n14\" x 7\" x 5\"\n(2024)",
-      "images": ["images/DSC03171.jpeg", "images/DSC03175.jpeg"]
+      "images": ["images/DSC03175.jpg", "images/DSC03202.jpg", "images/DSC03207.jpeg"]
     },
     "handlebar bag": {
       "title": "handlebar bag",
@@ -36,7 +31,7 @@
     "overnight bag": {
       "title": "backpack",
       "text": "ultralight backpacking pack made from dyneema, ripstop, and reclaimed foam.\n\n24\" x 14\" x 10\"\n(2023)",
-      "images": ["images/IMG_001.jpeg", "images/IMG_002.jpeg", "images/IMG_003.jpeg", "images/IMG_004.jpeg", "images/IMG_005.jpeg"]
+      "images": ["images/IMG_6080.jpeg","images/IMG_6083.jpeg", "images/IMG_004.jpeg",  "images/IMG_6081.jpeg" ]
     }
   }
 

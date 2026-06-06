@@ -8,9 +8,14 @@
     }
   },
   "~~~~~": {
+    "ungulate table": {
+      "title": "ungulate table",
+      "text": "End table in hooved silhouette made from scrap black walnut.\n\n 34\" x 9\" x 9\"\n(2026)",
+      "images": ["images/IMG_1519.JPG", "images/IMG_1525.JPG", "images/IMG_1557.JPG", "images/IMG_1571.JPG","images/IMG_1524.JPG"]
+    },
     "pin shelf": {
       "title": "pin shelf",
-      "text": "Low shelf in white oak with walnut pins\n\n 25\" x 10\" x 20\"\n(2026)",
+      "text": "Low shelf in white oak with walnut pins.\n\n 25\" x 10\" x 20\"\n(2026)",
       "images": ["images/IMG_1419.JPG", "images/IMG_1424.JPG","images/IMG_1421.JPG", "images/IMG_1396.JPG",    "images/IMG_1428.JPG"]
     },
     "hubba": {
@@ -25,13 +30,13 @@
     },
     "handlebar bag": {
       "title": "handlebar bag",
-      "text": "Waterproof handlebar bag made from reversed RX30 XPAC and 420D robic. Structure from tent pole and cutting board\n\n20\" x 9\" x 8\"\n(2024)",
+      "text": "Waterproof handlebar bag made from reversed RX30 XPAC and 420D robic. Structure from tent pole and cutting board.\n\n20\" x 9\" x 8\"\n(2024)",
       "images": ["images/DSC03097.jpeg", "images/DSC03100.jpeg", "images/DSC03123.jpeg"]
     },
     "overnight bag": {
       "title": "backpack",
       "text": "ultralight backpacking pack made from dyneema, ripstop, and reclaimed foam.\n\n24\" x 14\" x 10\"\n(2023)",
-      "images": ["images/IMG_6080.jpeg","images/IMG_6083.jpeg", "images/IMG_004.jpeg",  "images/IMG_6081.jpeg" ]
+      "images": ["images/IMG_6080.jpeg","images/IMG_6083.jpeg", "images/IMG_5813.JPG","images/IMG_6081.jpeg","images/IMG_004.jpeg" ]
     }
   }
 
